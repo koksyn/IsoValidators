@@ -28,17 +28,6 @@ This script will detect and execute all test files like `***-tests.red` under `/
 ./red -s run-all-tests.red
 ```
 
-### One validator
-
-All tests for specific validators are located under `/tests` directory.
-Each validator have a file `valid-NAME-tests.red`, where `NAME` should be replaced by validator name.
-
-For example (VAT validator):
- 
-```bash
-./red -s tests/valid-vat-tests.red
-```
-
 ## Compatibility
 
 Project was created and tested under **0.6.3** version of Red. Older versions were not tested.
