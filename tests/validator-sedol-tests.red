@@ -1,13 +1,11 @@
 Red [
     Title: "SEDOL validator tests"
-    Description: "Testing functionality of SEDOL validator using Tester script"
+    Description: "Testing functionality of SEDOL validator using RedUnit framework"
     Author: "Mateusz Palichleb"
     File: %validator-sedol-tests.red
 ]
 
-do %../src/tester.red
-
-tests: context [
+context [
     setup: func [
         "Initialize/Reload context before each test"
     ] [
@@ -64,5 +62,3 @@ tests: context [
         ]
     ]
 ]
-
-tester/run tests

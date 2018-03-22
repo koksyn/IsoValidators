@@ -1,16 +1,18 @@
 Red [
     Title: "Luhn validator tests"
-    Description: "Testing functionality of Luhn validator using Tester script"
+    Description: "Testing functionality of Luhn validator using RedUnit framework"
     Author: "Mateusz Palichleb"
     File: %validator-luhn-tests.red
 ]
 
-do %../src/tester.red
+; NOTE: actually these tests are disabled & waiting for RedUnit functionality,
+; which will allow us to run tests from multiple files at once
 
-tests: context [
+context [
     setup: func [
         "Initialize/Reload context before each test"
     ] [
+        probe pwd
         luhn: do %../src/validator/luhn.red
     ]
 
@@ -76,5 +78,3 @@ tests: context [
         ]
     ]
 ]
-
-tester/run tests

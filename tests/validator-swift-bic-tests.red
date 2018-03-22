@@ -1,13 +1,11 @@
 Red [
     Title: "SWIFT/BIC validator tests"
-    Description: "Testing functionality of SWIFT/BIC validator using Tester script"
+    Description: "Testing functionality of SWIFT/BIC validator using RedUnit framework"
     Author: "Mateusz Palichleb"
     File: %validator-swift-bic-tests.red
 ]
 
-do %../src/tester.red
-
-tests: context [
+context [
     setup: func [
         "Initialize/Reload context before each test"
     ] [
@@ -58,5 +56,3 @@ tests: context [
         ]
     ]
 ]
-
-tester/run tests
