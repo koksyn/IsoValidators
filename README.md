@@ -1,6 +1,6 @@
 # IsoValidators
 
-Pack of varied ISO-codes **validators** for **Red programming language**.
+Pack of varied ISO-codes **validators** for **Red** programming language.
 
 [![Travis build](https://travis-ci.org/koksyn/IsoValidators.svg?branch=master)](https://travis-ci.org/koksyn/IsoValidators)
 
